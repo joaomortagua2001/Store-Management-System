@@ -1,0 +1,96 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using GestaoLojaV1.Data
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@inject NavigationManager NavigationManager
+
+<div class="top-row ps-3">
+    <div class="container-fluid">
+        <a class="logo-span" href="/">@AppConfig.tituloHomePage</a>
+    </div>
+</div>
+
+<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+
+<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
+    @if (isUserLoggedIn && (isAdmin || isGestor))
+    {
+        <nav class="flex-column">
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="/" Match="NavLinkMatch.All">
+                    <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Gestão de Loja
+                </NavLink>
+            </div>
+
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="produtos">
+                    <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Produtos
+                </NavLink>
+            </div>
+
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="categoria">
+                    <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Categorias
+                </NavLink>
+            </div>
+
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="modoentregas">
+                    <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Disponibilização
+                </NavLink>
+            </div>
+
+
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="/account/vendas">
+                    <span class="bi bi-person-fill-nav-menu" aria-hidden="true"></span> Gestão de Vendas
+                </NavLink>
+            </div>
+
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="Account/GereUser">
+                    <span class="bi bi-person-fill-nav-menu" aria-hidden="true"></span> Gerir Utilizadores
+                </NavLink>
+            </div>
+
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="Account/gereroles">
+                    <span class="bi bi-arrow-bar-left-nav-menu" aria-hidden="true"></span> Gerir Roles
+                </NavLink>
+            </div>
+        </nav>
+    }
+</div>
+
+@code {
+    private string? currentUrl;
+    private bool isUserLoggedIn = false;
+    private bool isAdmin = false;
+    private bool isGestor = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        currentUrl = NavigationManager.ToBaseRelativePath(NavigationManager.Uri);
+        NavigationManager.LocationChanged += OnLocationChanged;
+
+        var user = await UserManager.GetUserAsync(SignInManager.Context.User);
+        if (user != null)
+        {
+            isUserLoggedIn = true;
+            var roles = await UserManager.GetRolesAsync(user);
+            isAdmin = roles.Contains("Admin");
+            isGestor = roles.Contains("Gestor");
+        }
+    }
+
+    private void OnLocationChanged(object? sender, LocationChangedEventArgs e)
+    {
+        currentUrl = NavigationManager.ToBaseRelativePath(e.Location);
+        StateHasChanged();
+    }
+
+    public void Dispose()
+    {
+        NavigationManager.LocationChanged -= OnLocationChanged;
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\GestaoLojaV1",
+    "\\GestaoLojaV1\\GestaoLojaV1",
+    "\\GestaoLojaV1\\GestaoLojaV1\\Components",
+    "\\GestaoLojaV1\\GestaoLojaV1\\Components\\Account",
+    "\\GestaoLojaV1\\GestaoLojaV1\\Data",
+    "\\GestaoLojaV1\\GestaoLojaV1\\Entities"
+  ],
+  "SelectedNode": "\\GestaoLojaV1\\GestaoLojaV1\\Entities\\ModoEntrega.cs",
+  "PreviewInSolutionExplorer": false
+}

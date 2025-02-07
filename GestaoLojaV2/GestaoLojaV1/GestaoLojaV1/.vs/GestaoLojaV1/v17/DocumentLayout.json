@@ -1,0 +1,315 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\gestaolojav2\\gestaolojav1\\gestaolojav1\\gestaolojav1\\data\\inicializacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|solutionrelative:gestaolojav1\\data\\inicializacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\gestaolojav2\\gestaolojav1\\gestaolojav1\\gestaolojav1\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|solutionrelative:gestaolojav1\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\gestaolojav2\\gestaolojav1\\gestaolojav1\\gestaolojav1\\data\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|solutionrelative:gestaolojav1\\data\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\gestaolojav2\\gestaolojav1\\gestaolojav1\\gestaolojav1\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|solutionrelative:gestaolojav1\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\gestaolojav2\\gestaolojav1\\gestaolojav1\\gestaolojav1\\components\\pages\\produtopages\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|solutionrelative:gestaolojav1\\components\\pages\\produtopages\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\gestaolojav2\\gestaolojav1\\gestaolojav1\\gestaolojav1\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|solutionrelative:gestaolojav1\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\gestaolojav2\\gestaolojav1\\gestaolojav1\\gestaolojav1\\components\\pages\\produtopages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|solutionrelative:gestaolojav1\\components\\pages\\produtopages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\gestaolojav2\\gestaolojav1\\gestaolojav1\\gestaolojav1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|solutionrelative:gestaolojav1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\gestaolojav2\\gestaolojav1\\gestaolojav1\\gestaolojav1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|solutionrelative:gestaolojav1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\gestaolojav2\\gestaolojav1\\gestaolojav1\\gestaolojav1\\migrations\\20250103160432_estadopagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|solutionrelative:gestaolojav1\\migrations\\20250103160432_estadopagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\gestaolojav2\\gestaolojav1\\gestaolojav1\\gestaolojav1\\entities\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|solutionrelative:gestaolojav1\\entities\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\gestaolojav2\\gestaolojav1\\gestaolojav1\\gestaolojav1\\entities\\pagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|solutionrelative:gestaolojav1\\entities\\pagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\gestaolojav2\\gestaolojav1\\gestaolojav1\\gestaolojav1\\components\\pages\\gerecargos\\gereroles.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|solutionrelative:gestaolojav1\\components\\pages\\gerecargos\\gereroles.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\gestaolojav2\\gestaolojav1\\gestaolojav1\\gestaolojav1\\components\\pages\\gereutilizadorespages\\gereutilizadores.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|solutionrelative:gestaolojav1\\components\\pages\\gereutilizadorespages\\gereutilizadores.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\gestaolojav2\\gestaolojav1\\gestaolojav1\\gestaolojav1\\migrations\\20250103163800_vendaspendente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|solutionrelative:gestaolojav1\\migrations\\20250103163800_vendaspendente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\gestaolojav2\\gestaolojav1\\gestaolojav1\\gestaolojav1\\migrations\\20250105153508_teste12345.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F69FFA9-0EB9-4B73-9EAE-EC42461407D4}|GestaoLojaV1\\GestaoLojaV1.csproj|solutionrelative:gestaolojav1\\migrations\\20250105153508_teste12345.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 277,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "GestaoLojaV1\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "GestaoLojaV1\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T16:00:22.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Data\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "GestaoLojaV1\\Data\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Data\\ApplicationUser.cs",
+              "RelativeToolTip": "GestaoLojaV1\\Data\\ApplicationUser.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA0wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T16:00:10.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "GestaoLojaV1\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "GestaoLojaV1\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-05T15:51:12.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.razor",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Components\\Pages\\ProdutoPages\\Create.razor",
+              "RelativeDocumentMoniker": "GestaoLojaV1\\Components\\Pages\\ProdutoPages\\Create.razor",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Components\\Pages\\ProdutoPages\\Create.razor",
+              "RelativeToolTip": "GestaoLojaV1\\Components\\Pages\\ProdutoPages\\Create.razor",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAwwNoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-05T15:41:56.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\appsettings.json",
+              "RelativeDocumentMoniker": "GestaoLojaV1\\appsettings.json",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\appsettings.json",
+              "RelativeToolTip": "GestaoLojaV1\\appsettings.json",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAswAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-05T15:34:28.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Program.cs",
+              "RelativeDocumentMoniker": "GestaoLojaV1\\Program.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Program.cs",
+              "RelativeToolTip": "GestaoLojaV1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T15:34:26.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Venda.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Entities\\Venda.cs",
+              "RelativeDocumentMoniker": "GestaoLojaV1\\Entities\\Venda.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Entities\\Venda.cs",
+              "RelativeToolTip": "GestaoLojaV1\\Entities\\Venda.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAQwBYAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T16:37:11.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Pagamento.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Entities\\Pagamento.cs",
+              "RelativeDocumentMoniker": "GestaoLojaV1\\Entities\\Pagamento.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Entities\\Pagamento.cs",
+              "RelativeToolTip": "GestaoLojaV1\\Entities\\Pagamento.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAkwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T16:02:56.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Inicializacao.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Data\\Inicializacao.cs",
+              "RelativeDocumentMoniker": "GestaoLojaV1\\Data\\Inicializacao.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Data\\Inicializacao.cs",
+              "RelativeToolTip": "GestaoLojaV1\\Data\\Inicializacao.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAACcAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T17:10:02.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GereRoles.razor",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Components\\Pages\\GereCargos\\GereRoles.razor",
+              "RelativeDocumentMoniker": "GestaoLojaV1\\Components\\Pages\\GereCargos\\GereRoles.razor",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Components\\Pages\\GereCargos\\GereRoles.razor",
+              "RelativeToolTip": "GestaoLojaV1\\Components\\Pages\\GereCargos\\GereRoles.razor",
+              "ViewState": "AgIAACkAAAAAAAAAAAAWwDsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-02T17:05:38.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GereUtilizadores.razor",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Components\\Pages\\GereUtilizadoresPages\\GereUtilizadores.razor",
+              "RelativeDocumentMoniker": "GestaoLojaV1\\Components\\Pages\\GereUtilizadoresPages\\GereUtilizadores.razor",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Components\\Pages\\GereUtilizadoresPages\\GereUtilizadores.razor",
+              "RelativeToolTip": "GestaoLojaV1\\Components\\Pages\\GereUtilizadoresPages\\GereUtilizadores.razor",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAuwLwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-02T16:59:58.465Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 123,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "GestaoLojaV1\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "GestaoLojaV1\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-05T15:36:48.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Components\\Pages\\ProdutoPages\\Index.razor",
+              "RelativeDocumentMoniker": "GestaoLojaV1\\Components\\Pages\\ProdutoPages\\Index.razor",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Components\\Pages\\ProdutoPages\\Index.razor",
+              "RelativeToolTip": "GestaoLojaV1\\Components\\Pages\\ProdutoPages\\Index.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-05T15:36:14.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20250105153508_teste12345.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Migrations\\20250105153508_teste12345.cs",
+              "RelativeDocumentMoniker": "GestaoLojaV1\\Migrations\\20250105153508_teste12345.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Migrations\\20250105153508_teste12345.cs",
+              "RelativeToolTip": "GestaoLojaV1\\Migrations\\20250105153508_teste12345.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T15:35:08.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20250103163800_VendasPendente.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Migrations\\20250103163800_VendasPendente.cs",
+              "RelativeDocumentMoniker": "GestaoLojaV1\\Migrations\\20250103163800_VendasPendente.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Migrations\\20250103163800_VendasPendente.cs",
+              "RelativeToolTip": "GestaoLojaV1\\Migrations\\20250103163800_VendasPendente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T16:38:00.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20250103160432_EstadoPagamento.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Migrations\\20250103160432_EstadoPagamento.cs",
+              "RelativeDocumentMoniker": "GestaoLojaV1\\Migrations\\20250103160432_EstadoPagamento.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\GestaoLojaV2\\GestaoLojaV1\\GestaoLojaV1\\GestaoLojaV1\\Migrations\\20250103160432_EstadoPagamento.cs",
+              "RelativeToolTip": "GestaoLojaV1\\Migrations\\20250103160432_EstadoPagamento.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAwwAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T16:04:32.519Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

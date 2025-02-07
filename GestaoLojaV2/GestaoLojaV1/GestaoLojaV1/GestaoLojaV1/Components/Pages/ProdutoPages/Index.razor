@@ -1,0 +1,173 @@
+﻿@page "/produtos"
+
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.EntityFrameworkCore
+@using Microsoft.AspNetCore.Components.QuickGrid
+@using GestaoLojaV1.Entities
+@using GestaoLojaV1.Data
+@attribute [Authorize(Roles = "Admin,Gestor")]
+@rendermode InteractiveServer
+
+@inject IDbContextFactory<ApplicationDbContext> DbFactory
+
+<PageTitle>Listagem de Produtos</PageTitle>
+
+<h1>Listagem de Produtos</h1>
+
+<p>
+    <a title="Novo registro!" href="produtos/create"><img src="/img/novo.png" style="height:50px" /></a>
+</p>
+
+<div class="filters">
+    <label>Categoria:</label>
+    <select @bind="selectedCategoriaId">
+        <option value="">Todas</option>
+        @foreach (var categoria in categorias)
+        {
+            <option value="@categoria.Id">@categoria.Nome</option>
+        }
+    </select>
+
+    <label>Disponibilização:</label>
+    <select @bind="selectedModoEntregaId">
+        <option value="">Todos</option>
+        @foreach (var modo in modosEntrega)
+        {
+            <option value="@modo.Id">@modo.Nome</option>
+        }
+    </select>
+
+    <label>Disponível:</label>
+    <select @bind="selectedDisponivel">
+        <option value="">Todos</option>
+        <option value="true">Sim</option>
+        <option value="false">Não</option>
+    </select>
+</div>
+
+<QuickGrid Items="@produtosFiltrados.AsQueryable()" TGridItem="Produto" @ref="grid" Pagination="@pagination">
+    <TemplateColumn Title="Imagem" Context="produto">
+        @if (produto.Imagem is not null)
+        {
+            <img class="img-thumbnail" src="data:image/*;base64,@Convert.ToBase64String(produto.Imagem)" style="width:100px" />
+        }
+        else
+        {
+            <img class="img-thumbnail" src="img/noproductstrans.png" style="width:100px" />
+        }
+    </TemplateColumn>
+    <PropertyColumn TGridItem="Produto" TProp="string" Property="produto => produto.Nome" Sortable="true" Title="Nome" />
+    <PropertyColumn TGridItem="Produto" TProp="string" Property="produto => produto.Detalhe" Title="Detalhes" />
+    <PropertyColumn TGridItem="Produto" TProp="decimal" Property="produto => produto.Preco" Sortable="true" Title="Preço" />
+    <PropertyColumn TGridItem="Produto" TProp="decimal" Property="produto => produto.EmStock" Sortable="true" Title="Stock" />
+    <PropertyColumn TGridItem="Produto" TProp="string" Property="produto => produto.categoria.Nome" Title="Categoria" />
+    <TemplateColumn Title="Disponível" Context="produto">
+        @((produto.Disponivel) ? "Sim" : "Não")
+    </TemplateColumn>
+    <TemplateColumn Title="Ações" Context="produto">
+        <a href="@($"produtos/edit?id={produto.Id}")"><img src="/img/editicon.png" style="height:30px" /></a>
+        <a href="@($"produtos/details?id={produto.Id}")"><img src="/img/detailsicon.png" style="height:30px" /></a>
+        <a href="@($"produtos/delete?id={produto.Id}")"><img src="/img/deleteicon.png" style="height:30px" /></a>
+    </TemplateColumn>
+</QuickGrid>
+
+<div class="page-size-chooser">
+    Produtos:
+    <select @bind="pagination.ItemsPerPage">
+        <option>5</option>
+        <option>10</option>
+        <option>15</option>
+    </select>
+</div>
+<div class="card-footer">
+    <Paginator State="@pagination" />
+</div>
+
+@code {
+    QuickGrid<Produto>? grid;
+
+    // Pagination
+    PaginationState pagination = new() { ItemsPerPage = 5 };
+
+    // Data
+    private List<Categoria> categorias = new();
+    private List<ModoEntrega> modosEntrega = new();
+    private List<Produto> produtosFiltrados = new();
+
+    private string? selectedCategoriaId
+    {
+        get => _selectedCategoriaId;
+        set
+        {
+            _selectedCategoriaId = value;
+            AplicarFiltros(); // Atualiza os filtros ao mudar a categoria
+        }
+    }
+
+    private string? selectedModoEntregaId
+    {
+        get => _selectedModoEntregaId;
+        set
+        {
+            _selectedModoEntregaId = value;
+            AplicarFiltros(); // Atualiza os filtros ao mudar o modo de entrega
+        }
+    }
+
+    private string? selectedDisponivel
+    {
+        get => _selectedDisponivel;
+        set
+        {
+            _selectedDisponivel = value;
+            AplicarFiltros(); // Atualiza os filtros ao mudar o estado de disponibilidade
+        }
+    }
+
+    private string? _selectedCategoriaId;
+    private string? _selectedModoEntregaId;
+    private string? _selectedDisponivel;
+
+    private ApplicationDbContext context = default!;
+
+    protected override async Task OnInitializedAsync()
+    {
+        context = DbFactory.CreateDbContext();
+
+        // Carregar categorias e modos de entrega
+        categorias = await context.Categorias.OrderBy(c => c.Nome).ToListAsync();
+        modosEntrega = await context.ModosEntrega.OrderBy(m => m.Nome).ToListAsync();
+
+        // Carregar produtos
+        await AplicarFiltros();
+    }
+
+    private async Task AplicarFiltros()
+    {
+        var query = context.Produtos
+            .Include(p => p.categoria)
+            .Include(p => p.modoentrega)
+            .AsQueryable();
+
+        if (!string.IsNullOrEmpty(selectedCategoriaId))
+        {
+            query = query.Where(p => p.CategoriaId.ToString() == selectedCategoriaId);
+        }
+
+        if (!string.IsNullOrEmpty(selectedModoEntregaId))
+        {
+            query = query.Where(p => p.ModoEntregaId.ToString() == selectedModoEntregaId);
+        }
+
+        if (!string.IsNullOrEmpty(selectedDisponivel))
+        {
+            bool isDisponivel = bool.Parse(selectedDisponivel);
+            query = query.Where(p => p.Disponivel == isDisponivel);
+        }
+
+        produtosFiltrados = await query.OrderBy(p => p.categoria.Nome).ThenBy(p => p.Nome).ToListAsync();
+        StateHasChanged(); // Forçar atualização da interface
+    }
+
+    public async ValueTask DisposeAsync() => await context.DisposeAsync();
+}

@@ -1,0 +1,953 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Your API",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Carrinho": {
+      "post": {
+        "tags": [
+          "Carrinho"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProdutoVenda"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProdutoVenda"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProdutoVenda"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Carrinho/{usuarioId}": {
+      "get": {
+        "tags": [
+          "Carrinho"
+        ],
+        "parameters": [
+          {
+            "name": "usuarioId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Carrinho/{id}": {
+      "put": {
+        "tags": [
+          "Carrinho"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "integer",
+                "format": "int32"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "integer",
+                "format": "int32"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Carrinho"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Categorias": {
+      "get": {
+        "tags": [
+          "Categorias"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Favoritos/{utilizadorId}": {
+      "get": {
+        "tags": [
+          "Favoritos"
+        ],
+        "parameters": [
+          {
+            "name": "utilizadorId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Favoritos/{produtoId}": {
+      "post": {
+        "tags": [
+          "Favoritos"
+        ],
+        "parameters": [
+          {
+            "name": "produtoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "utilizadorId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Favoritos"
+        ],
+        "parameters": [
+          {
+            "name": "produtoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "utilizadorId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Pagamentos/{id}": {
+      "put": {
+        "tags": [
+          "Pagamentos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Pagamentos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Pagamentos/venda/{vendaId}/pagar": {
+      "put": {
+        "tags": [
+          "Pagamentos"
+        ],
+        "parameters": [
+          {
+            "name": "vendaId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Produtos": {
+      "get": {
+        "tags": [
+          "Produtos"
+        ],
+        "parameters": [
+          {
+            "name": "tipoProduto",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "categoriaId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Produtos/{id}": {
+      "get": {
+        "tags": [
+          "Produtos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Produtos/destaque": {
+      "get": {
+        "tags": [
+          "Produtos"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Utilizadores/RegistarUser": {
+      "post": {
+        "tags": [
+          "Utilizadores"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistarUserDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistarUserDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistarUserDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Utilizadores/LoginUser": {
+      "post": {
+        "tags": [
+          "Utilizadores"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vendas": {
+      "post": {
+        "tags": [
+          "Vendas"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CriarVendaDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CriarVendaDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CriarVendaDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vendas/{id}": {
+      "get": {
+        "tags": [
+          "Vendas"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ApplicationUser": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "string",
+            "nullable": true
+          },
+          "UserName": {
+            "type": "string",
+            "nullable": true
+          },
+          "NormalizedUserName": {
+            "type": "string",
+            "nullable": true
+          },
+          "Email": {
+            "type": "string",
+            "nullable": true
+          },
+          "NormalizedEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "EmailConfirmed": {
+            "type": "boolean"
+          },
+          "PasswordHash": {
+            "type": "string",
+            "nullable": true
+          },
+          "SecurityStamp": {
+            "type": "string",
+            "nullable": true
+          },
+          "ConcurrencyStamp": {
+            "type": "string",
+            "nullable": true
+          },
+          "PhoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "PhoneNumberConfirmed": {
+            "type": "boolean"
+          },
+          "TwoFactorEnabled": {
+            "type": "boolean"
+          },
+          "LockoutEnd": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "LockoutEnabled": {
+            "type": "boolean"
+          },
+          "AccessFailedCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "Apelido": {
+            "type": "string",
+            "nullable": true
+          },
+          "NIF": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "Rua": {
+            "type": "string",
+            "nullable": true
+          },
+          "Localidade1": {
+            "type": "string",
+            "nullable": true
+          },
+          "Localidade2": {
+            "type": "string",
+            "nullable": true
+          },
+          "Pais": {
+            "type": "string",
+            "nullable": true
+          },
+          "Fotografia": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Categoria": {
+        "required": [
+          "Nome"
+        ],
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Nome": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "Ordem": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "UrlImagem": {
+            "type": "string",
+            "nullable": true
+          },
+          "Imagem": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          },
+          "ImageFile": {
+            "type": "string",
+            "format": "binary",
+            "nullable": true
+          },
+          "CategoriaPaiId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "CategoriaPai": {
+            "$ref": "#/components/schemas/Categoria"
+          },
+          "Subcategorias": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Categoria"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CriarVendaDTO": {
+        "type": "object",
+        "properties": {
+          "UsuarioId": {
+            "type": "string",
+            "nullable": true
+          },
+          "ProdutosVenda": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProdutoVendaDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginRequest": {
+        "type": "object",
+        "properties": {
+          "Email": {
+            "type": "string",
+            "nullable": true
+          },
+          "Password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ModoEntrega": {
+        "required": [
+          "Nome"
+        ],
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Nome": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "Detalhe": {
+            "maxLength": 200,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProblemDetails": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "detail": {
+            "type": "string",
+            "nullable": true
+          },
+          "instance": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": { }
+      },
+      "Produto": {
+        "required": [
+          "Detalhe",
+          "Nome",
+          "Preco"
+        ],
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Nome": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "Detalhe": {
+            "maxLength": 200,
+            "minLength": 0,
+            "type": "string"
+          },
+          "UrlImagem": {
+            "maxLength": 200,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "Imagem": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          },
+          "Preco": {
+            "type": "number",
+            "format": "double"
+          },
+          "Promocao": {
+            "type": "boolean"
+          },
+          "MaisVendido": {
+            "type": "boolean"
+          },
+          "EmStock": {
+            "type": "number",
+            "format": "double"
+          },
+          "Disponivel": {
+            "type": "boolean"
+          },
+          "Origem": {
+            "type": "string",
+            "nullable": true
+          },
+          "CategoriaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "categoria": {
+            "$ref": "#/components/schemas/Categoria"
+          },
+          "modoentrega": {
+            "$ref": "#/components/schemas/ModoEntrega"
+          },
+          "ImageFile": {
+            "type": "string",
+            "format": "binary",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProdutoVenda": {
+        "required": [
+          "PrecoUnitario",
+          "ProdutoId",
+          "Quantidade"
+        ],
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ProdutoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Produto": {
+            "$ref": "#/components/schemas/Produto"
+          },
+          "UsuarioId": {
+            "type": "string",
+            "nullable": true
+          },
+          "Usuario": {
+            "$ref": "#/components/schemas/ApplicationUser"
+          },
+          "VendaId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "Venda": {
+            "$ref": "#/components/schemas/Venda"
+          },
+          "Quantidade": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "PrecoUnitario": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProdutoVendaDTO": {
+        "type": "object",
+        "properties": {
+          "ProdutoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Quantidade": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RegistarUserDto": {
+        "type": "object",
+        "properties": {
+          "Nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "Apelido": {
+            "type": "string",
+            "nullable": true
+          },
+          "Email": {
+            "type": "string",
+            "nullable": true
+          },
+          "Password": {
+            "type": "string",
+            "nullable": true
+          },
+          "NIF": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Venda": {
+        "required": [
+          "Data",
+          "Status",
+          "UsuarioId"
+        ],
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "UsuarioId": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "Usuario": {
+            "$ref": "#/components/schemas/ApplicationUser"
+          },
+          "Data": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "Status": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "Total": {
+            "type": "number",
+            "format": "double"
+          },
+          "ProdutosVenda": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProdutoVenda"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "JWT Authorization header using the Bearer scheme",
+        "scheme": "bearer"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+﻿@page "/categoria/create"
+
+@attribute [Authorize(Roles = "Admin,Gestor")]
+
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.EntityFrameworkCore
+@using GestaoLojaV1.Entities
+@using GestaoLojaV1.Data
+@inject IDbContextFactory<ApplicationDbContext> DbFactory
+@inject NavigationManager NavigationManager
+@rendermode InteractiveServer
+
+<PageTitle>Criar</PageTitle>
+
+<h1>Criar registo!</h1>
+
+<h4>Categoria</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <EditForm Model="@Categoria" OnValidSubmit="AddCategoria" FormName="create-category-form">
+            <DataAnnotationsValidator />
+            <ValidationSummary class="text-danger" />
+
+            <div class="mb-3">
+                <div>
+                    @if (Categoria.Imagem != null && Categoria.Imagem.Length > 0)
+                    {
+                        <img title="@Categoria.Nome" id="imagePreview" class="img-thumbnail mt-2" src="Produtos\@Categoria.Imagem" style="width:100px;" />
+                    }
+                    else
+                    {
+                        <img id="imagePreview" class="img-thumbnail mt-2" src="img/noproductstrans.png" style="width:100px;" />
+                    }
+                </div>
+
+                <label for="nome" class="form-label">Nome:</label>
+                <InputText id="nome" @bind-Value="Categoria.Nome" class="form-control" />
+                <ValidationMessage For="() => Categoria.Nome" class="text-danger" />
+            </div>
+
+            <div class="mb-3">
+                <label for="ordem" class="form-label">Ordem na visualização:</label>
+                <InputNumber id="ordem" @bind-Value="Categoria.Ordem" class="form-control" />
+                <ValidationMessage For="() => Categoria.Ordem" class="text-danger" />
+            </div>
+
+            <div class="mb-3">
+                <label for="categoriaPai" class="form-label">Categoria Pai:</label>
+                <select id="categoriaPai" class="form-control" @bind="Categoria.CategoriaPaiId">
+                    <option value="">Nenhuma</option>
+                    @foreach (var categoria in CategoriasDisponiveis)
+                    {
+                        <option value="@categoria.Id">@categoria.Nome</option>
+                    }
+                </select>
+            </div>
+
+
+            <div class="mb-3">
+                <label for="imageUri" class="form-label">Imagem:</label>
+                <input id="imageUri" type="file" name="Categoria.ImageFile" class="form-control" accept=".png, .jpg, .jpeg"
+                       onchange="document.getElementById('imagePreview').src = window.URL.createObjectURL(this.files[0])" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                <img title="Gravar" src="/img/saveicon.png" style="height:30px" />
+            </button>
+            <a href="/produtos" type="button" class="btn btn-outline-secondary">
+                <img title="Recuar" src="/img/backicon.png" style="height:30px" />
+            </a>
+        </EditForm>
+        <button type="button" class="btn btn-secondary" @onclick="() => DebugCategoriaPaiId()">
+            Verificar Dados
+        </button>
+    </div>
+</div>
+
+@code {
+
+    [SupplyParameterFromForm]
+    public Categoria Categoria { get; set; } = new();
+
+    public List<Categoria> CategoriasDisponiveis { get; set; } = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        using var context = DbFactory.CreateDbContext();
+        CategoriasDisponiveis = await context.Categorias.OrderBy(c => c.Nome).ToListAsync();
+    }
+
+    public async Task AddCategoria()
+    {
+        using var context = DbFactory.CreateDbContext();
+
+        Console.WriteLine($"CategoriaPaiId recebido no backend: {Categoria.CategoriaPaiId}");
+
+        // Verifica e associa a categoria pai, se necessário
+        if (Categoria.CategoriaPaiId.HasValue)
+        {
+            var categoriaPai = await context.Categorias
+                .Include(c => c.Subcategorias) // Inclui subcategorias
+                .FirstOrDefaultAsync(c => c.Id == Categoria.CategoriaPaiId);
+
+            if (categoriaPai != null)
+            {
+                Console.WriteLine($"CategoriaPai encontrada: {categoriaPai.Nome}");
+                Categoria.CategoriaPai = categoriaPai;
+
+                if (categoriaPai.Subcategorias == null)
+                {
+                    categoriaPai.Subcategorias = new List<Categoria>();
+                }
+
+                categoriaPai.Subcategorias.Add(Categoria);
+                context.Entry(categoriaPai).State = EntityState.Modified;
+            }
+        }
+
+        context.Categorias.Add(Categoria);
+
+        try
+        {
+            if (Categoria.ImageFile != null)
+            {
+                if (Categoria.ImageFile.Length > (200 * 1024))
+                {
+                    Console.WriteLine("Imagem excede o tamanho permitido.");
+                    return;
+                }
+
+                if (!isValidFileType(Categoria.ImageFile.FileName))
+                {
+                    Console.WriteLine("Tipo de arquivo inválido.");
+                    return;
+                }
+
+                Categoria.UrlImagem = Categoria.ImageFile.FileName;
+
+                using (var dataStream = new MemoryStream())
+                {
+                    await Categoria.ImageFile.CopyToAsync(dataStream);
+                    Categoria.Imagem = dataStream.ToArray();
+                }
+            }
+
+            await context.SaveChangesAsync();
+            Console.WriteLine("Categoria salva com sucesso!");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Erro ao salvar categoria: {ex.Message}");
+            throw;
+        }
+
+        NavigationManager.NavigateTo("/categoria");
+    }
+
+    private void DebugCategoriaPaiId()
+    {
+        Console.WriteLine($"CategoriaPaiId no frontend: {Categoria.CategoriaPaiId}");
+    }
+
+    bool isValidFileType(string fileName)
+    {
+        string ext = Path.GetExtension(fileName);
+        switch (ext.ToLower())
+        {
+            case ".jpg":
+                return true;
+            case ".jpeg":
+                return true;
+            case ".png":
+                return true;
+            default:
+                return false;
+        }
+    }
+}

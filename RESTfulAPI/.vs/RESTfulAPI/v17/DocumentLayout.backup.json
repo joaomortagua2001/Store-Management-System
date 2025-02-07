@@ -1,0 +1,694 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\controllers\\utilizadorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\controllers\\utilizadorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\dtos\\registaruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\dtos\\registaruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\repositories\\utilizadoresrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\repositories\\utilizadoresrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\repositories\\ifavoritorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\repositories\\ifavoritorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\repositories\\favoritorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\repositories\\favoritorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\controllers\\favoritocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\controllers\\favoritocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\entities\\favorito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\entities\\favorito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\repositories\\produtorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\repositories\\produtorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\entities\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\entities\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\dtos\\produtodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\dtos\\produtodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\entities\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\entities\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\repositories\\iutilizadoresrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\repositories\\iutilizadoresrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\entities\\utilizador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\entities\\utilizador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\data\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\data\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\entities\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\entities\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\entities\\produtovenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\entities\\produtovenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\entities\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\entities\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\controllers\\vendascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\controllers\\vendascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\controllers\\pagamentoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\controllers\\pagamentoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\controllers\\carrinhocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\controllers\\carrinhocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\repositories\\produtovendasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\repositories\\produtovendasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\repositories\\iprodutovendasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\repositories\\iprodutovendasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\entities\\pagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\entities\\pagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\entities\\modoentrega.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\entities\\modoentrega.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\restfulapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\restfulapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\repositories\\pagamentosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\repositories\\pagamentosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\repositories\\ipagamentosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\repositories\\ipagamentosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\dtos\\vendadetalhadadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\dtos\\vendadetalhadadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\dtos\\criarvendadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\dtos\\criarvendadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\restfulapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\restfulapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\repositories\\iprodutorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\repositories\\iprodutorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\repositories\\ivendasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\repositories\\ivendasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\repositories\\vendasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\repositories\\vendasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|c:\\users\\joaom\\desktop\\trabalhopwebentregar\\restfulapi\\restfulapi\\repositories\\categoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8CB8AF-5C33-416D-88F9-4D51AAD48791}|RESTfulAPI\\RESTfulAPI.csproj|solutionrelative:restfulapi\\repositories\\categoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 1546,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 158,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CategoriasController.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Controllers\\CategoriasController.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Controllers\\CategoriasController.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Controllers\\CategoriasController.cs",
+              "RelativeToolTip": "RESTfulAPI\\Controllers\\CategoriasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T18:27:46.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Entities\\Produto.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Entities\\Produto.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Entities\\Produto.cs",
+              "RelativeToolTip": "RESTfulAPI\\Entities\\Produto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T18:35:52.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProdutoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Repositories\\ProdutoRepository.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Repositories\\ProdutoRepository.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Repositories\\ProdutoRepository.cs",
+              "RelativeToolTip": "RESTfulAPI\\Repositories\\ProdutoRepository.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T12:04:33.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FavoritoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Repositories\\FavoritoRepository.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Repositories\\FavoritoRepository.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Repositories\\FavoritoRepository.cs",
+              "RelativeToolTip": "RESTfulAPI\\Repositories\\FavoritoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T18:40:37.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UtilizadoresController.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Controllers\\UtilizadoresController.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Controllers\\UtilizadoresController.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Controllers\\UtilizadoresController.cs",
+              "RelativeToolTip": "RESTfulAPI\\Controllers\\UtilizadoresController.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAwwHQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T18:05:33.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UtilizadoresRepository.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Repositories\\UtilizadoresRepository.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Repositories\\UtilizadoresRepository.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Repositories\\UtilizadoresRepository.cs",
+              "RelativeToolTip": "RESTfulAPI\\Repositories\\UtilizadoresRepository.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAcwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T23:25:48.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegistarUserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\DTOs\\RegistarUserDTO.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\DTOs\\RegistarUserDTO.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\DTOs\\RegistarUserDTO.cs",
+              "RelativeToolTip": "RESTfulAPI\\DTOs\\RegistarUserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T14:47:32.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Program.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Program.cs",
+              "RelativeToolTip": "RESTfulAPI\\Program.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAYwHYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T17:56:08.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "RESTfulAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\appsettings.json",
+              "RelativeToolTip": "RESTfulAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-04T23:22:28.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "PagamentosController.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Controllers\\PagamentosController.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Controllers\\PagamentosController.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Controllers\\PagamentosController.cs",
+              "RelativeToolTip": "RESTfulAPI\\Controllers\\PagamentosController.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAIwFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T17:03:37.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FavoritoController.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Controllers\\FavoritoController.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Controllers\\FavoritoController.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Controllers\\FavoritoController.cs",
+              "RelativeToolTip": "RESTfulAPI\\Controllers\\FavoritoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T18:40:13.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IFavoritoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Repositories\\IFavoritoRepository.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Repositories\\IFavoritoRepository.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Repositories\\IFavoritoRepository.cs",
+              "RelativeToolTip": "RESTfulAPI\\Repositories\\IFavoritoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T18:41:14.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Favorito.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Entities\\Favorito.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Entities\\Favorito.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Entities\\Favorito.cs",
+              "RelativeToolTip": "RESTfulAPI\\Entities\\Favorito.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T18:23:55.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProdutosController.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Controllers\\ProdutosController.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Controllers\\ProdutosController.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Controllers\\ProdutosController.cs",
+              "RelativeToolTip": "RESTfulAPI\\Controllers\\ProdutosController.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAYwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T18:36:03.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Entities\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Entities\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Entities\\LoginRequest.cs",
+              "RelativeToolTip": "RESTfulAPI\\Entities\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T23:13:57.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "RESTfulAPI\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T18:33:06.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProdutoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\DTOs\\ProdutoDTO.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\DTOs\\ProdutoDTO.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\DTOs\\ProdutoDTO.cs",
+              "RelativeToolTip": "RESTfulAPI\\DTOs\\ProdutoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T00:18:55.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IUtilizadoresRepository.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Repositories\\IUtilizadoresRepository.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Repositories\\IUtilizadoresRepository.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Repositories\\IUtilizadoresRepository.cs",
+              "RelativeToolTip": "RESTfulAPI\\Repositories\\IUtilizadoresRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T23:25:23.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Data\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Data\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Data\\ApplicationUser.cs",
+              "RelativeToolTip": "RESTfulAPI\\Data\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T23:36:40.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Utilizador.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Entities\\Utilizador.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Entities\\Utilizador.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Entities\\Utilizador.cs",
+              "RelativeToolTip": "RESTfulAPI\\Entities\\Utilizador.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAzwDwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T12:01:46.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "VendasController.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Controllers\\VendasController.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Controllers\\VendasController.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Controllers\\VendasController.cs",
+              "RelativeToolTip": "RESTfulAPI\\Controllers\\VendasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T15:08:38.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ProdutoVenda.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Entities\\ProdutoVenda.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Entities\\ProdutoVenda.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Entities\\ProdutoVenda.cs",
+              "RelativeToolTip": "RESTfulAPI\\Entities\\ProdutoVenda.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T12:01:37.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CarrinhoController.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Controllers\\CarrinhoController.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Controllers\\CarrinhoController.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Controllers\\CarrinhoController.cs",
+              "RelativeToolTip": "RESTfulAPI\\Controllers\\CarrinhoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T18:29:12.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Entities\\Categoria.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Entities\\Categoria.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Entities\\Categoria.cs",
+              "RelativeToolTip": "RESTfulAPI\\Entities\\Categoria.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T12:01:02.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Venda.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Entities\\Venda.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Entities\\Venda.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Entities\\Venda.cs",
+              "RelativeToolTip": "RESTfulAPI\\Entities\\Venda.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T12:01:55.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IProdutoVendasRepository.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Repositories\\IProdutoVendasRepository.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Repositories\\IProdutoVendasRepository.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Repositories\\IProdutoVendasRepository.cs",
+              "RelativeToolTip": "RESTfulAPI\\Repositories\\IProdutoVendasRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T18:29:49.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ProdutoVendasRepository.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Repositories\\ProdutoVendasRepository.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Repositories\\ProdutoVendasRepository.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Repositories\\ProdutoVendasRepository.cs",
+              "RelativeToolTip": "RESTfulAPI\\Repositories\\ProdutoVendasRepository.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAqwE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T18:30:27.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "PagamentosRepository.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Repositories\\PagamentosRepository.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Repositories\\PagamentosRepository.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Repositories\\PagamentosRepository.cs",
+              "RelativeToolTip": "RESTfulAPI\\Repositories\\PagamentosRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T17:04:09.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ModoEntrega.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Entities\\ModoEntrega.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Entities\\ModoEntrega.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Entities\\ModoEntrega.cs",
+              "RelativeToolTip": "RESTfulAPI\\Entities\\ModoEntrega.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T12:01:14.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Pagamento.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Entities\\Pagamento.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Entities\\Pagamento.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Entities\\Pagamento.cs",
+              "RelativeToolTip": "RESTfulAPI\\Entities\\Pagamento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T12:01:22.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IPagamentosRepository.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Repositories\\IPagamentosRepository.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Repositories\\IPagamentosRepository.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Repositories\\IPagamentosRepository.cs",
+              "RelativeToolTip": "RESTfulAPI\\Repositories\\IPagamentosRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T17:04:21.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "RESTfulAPI",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\RESTfulAPI.csproj",
+              "RelativeDocumentMoniker": "RESTfulAPI\\RESTfulAPI.csproj",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\RESTfulAPI.csproj",
+              "RelativeToolTip": "RESTfulAPI\\RESTfulAPI.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-04T15:26:04.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "RESTfulAPI.csproj",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\RESTfulAPI.csproj",
+              "RelativeDocumentMoniker": "RESTfulAPI\\RESTfulAPI.csproj",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\RESTfulAPI.csproj",
+              "RelativeToolTip": "RESTfulAPI\\RESTfulAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-03T16:46:36.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CriarVendaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\DTOs\\CriarVendaDTO.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\DTOs\\CriarVendaDTO.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\DTOs\\CriarVendaDTO.cs",
+              "RelativeToolTip": "RESTfulAPI\\DTOs\\CriarVendaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T16:47:47.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "VendaDetalhadaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\DTOs\\VendaDetalhadaDTO.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\DTOs\\VendaDetalhadaDTO.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\DTOs\\VendaDetalhadaDTO.cs",
+              "RelativeToolTip": "RESTfulAPI\\DTOs\\VendaDetalhadaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T16:48:55.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "IVendasRepository.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Repositories\\IVendasRepository.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Repositories\\IVendasRepository.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Repositories\\IVendasRepository.cs",
+              "RelativeToolTip": "RESTfulAPI\\Repositories\\IVendasRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T15:11:27.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "VendasRepository.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Repositories\\VendasRepository.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Repositories\\VendasRepository.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Repositories\\VendasRepository.cs",
+              "RelativeToolTip": "RESTfulAPI\\Repositories\\VendasRepository.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAmwD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T15:12:42.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "IProdutoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Repositories\\IProdutoRepository.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Repositories\\IProdutoRepository.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Repositories\\IProdutoRepository.cs",
+              "RelativeToolTip": "RESTfulAPI\\Repositories\\IProdutoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T12:04:32.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "RESTfulAPI\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\appsettings.Development.json",
+              "RelativeToolTip": "RESTfulAPI\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-02T18:33:04.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "CategoriaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Repositories\\CategoriaRepository.cs",
+              "RelativeDocumentMoniker": "RESTfulAPI\\Repositories\\CategoriaRepository.cs",
+              "ToolTip": "C:\\Users\\joaom\\Desktop\\TrabalhoPWEBENTREGAR\\RESTfulAPI\\RESTfulAPI\\Repositories\\CategoriaRepository.cs",
+              "RelativeToolTip": "RESTfulAPI\\Repositories\\CategoriaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T18:27:27.66Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

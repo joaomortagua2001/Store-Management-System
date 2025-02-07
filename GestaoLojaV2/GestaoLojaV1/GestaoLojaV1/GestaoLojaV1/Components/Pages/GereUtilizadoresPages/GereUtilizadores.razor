@@ -1,0 +1,188 @@
+﻿@page "/account/gereuser"
+@using Microsoft.AspNetCore.Identity
+@using GestaoLojaV1.Data
+@using Microsoft.EntityFrameworkCore
+@inject UserManager<ApplicationUser> UserManager
+@inject IDbContextFactory<ApplicationDbContext> DbContextFactory
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@rendermode InteractiveServer
+@using Microsoft.AspNetCore.Authorization
+
+@attribute [Authorize(Roles = "Admin,Gestor")]
+
+<h3>Gerir Utilizadores</h3>
+
+@if (!string.IsNullOrEmpty(feedbackMessage))
+{
+    <div class="alert alert-warning">@feedbackMessage</div>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Apelido</th>
+            <th>Rua</th>
+            <th>E-mail</th>
+            <th>Papéis</th>
+            <th>Status</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (usersWithRoles != null)
+        {
+            foreach (var user in usersWithRoles)
+            {
+                <tr>
+                    <td>@user.Nome</td>
+                    <td>@user.Apelido</td>
+                    <td>@user.Rua</td>
+                    <td>@user.Email</td>
+                    <td>@string.Join(", ", user.Roles)</td>
+                    <td>@(user.IsLockedOut ? "Bloqueado" : "Ativo")</td>
+                    <td>
+                        <button class="btn btn-primary" @onclick="() => EditUser(user.Id)">Editar</button>
+                        <button class="btn btn-danger" @onclick="() => DeleteUser(user.Id)">Excluir</button>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+@if (selectedUser != null)
+{
+    <EditForm Model="selectedUser" OnValidSubmit="SaveUser">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="mb-3">
+            <label for="Nome">Nome</label>
+            <InputText id="Nome" @bind-Value="selectedUser.Nome" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label for="Apelido">Apelido</label>
+            <InputText id="Apelido" @bind-Value="selectedUser.Apelido" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label for="Rua">Rua</label>
+            <InputText id="Rua" @bind-Value="selectedUser.Rua" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label for="Email">E-mail</label>
+            <InputText id="Email" @bind-Value="selectedUser.Email" class="form-control" readonly />
+        </div>
+
+        <button class="btn btn-success" type="submit">Salvar</button>
+        <button class="btn btn-secondary" @onclick="Cancel">Cancelar</button>
+    </EditForm>
+}
+
+@code {
+    private List<UserWithRoles>? usersWithRoles;
+    private UserWithRoles? selectedUser;
+    private string? feedbackMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            usersWithRoles = await GetUsersWithRoles();
+        }
+        catch (Exception ex)
+        {
+            feedbackMessage = $"Erro ao carregar usuários: {ex.Message}";
+        }
+    }
+
+    private async Task<List<UserWithRoles>> GetUsersWithRoles()
+    {
+        var result = new List<UserWithRoles>();
+
+        using var context = DbContextFactory.CreateDbContext();
+        var users = await context.Users.ToListAsync();
+
+        foreach (var user in users)
+        {
+            var roles = await UserManager.GetRolesAsync(user);
+            result.Add(new UserWithRoles
+                {
+                    Id = user.Id,
+                    Nome = user.Nome,
+                    Apelido = user.Apelido,
+                    Rua = user.Rua,
+                    Email = user.Email,
+                    Roles = roles.ToList(),
+                    IsLockedOut = user.LockoutEnd.HasValue && user.LockoutEnd > DateTime.UtcNow
+                });
+        }
+
+        return result;
+    }
+
+    private void EditUser(string id)
+    {
+        selectedUser = usersWithRoles?.FirstOrDefault(u => u.Id == id);
+    }
+
+    private async Task DeleteUser(string id)
+    {
+        // Obtém o ID do usuário atual logado
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var currentUserId = authState.User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+
+        // Verifica se o usuário atual está tentando excluir a si mesmo
+        if (id == currentUserId)
+        {
+            feedbackMessage = "Você não pode excluir seu próprio registro.";
+            return;
+        }
+
+        var user = await UserManager.FindByIdAsync(id);
+        if (user != null)
+        {
+            await UserManager.DeleteAsync(user);
+            usersWithRoles = await GetUsersWithRoles();
+            feedbackMessage = "Usuário excluído com sucesso.";
+        }
+    }
+
+    private async Task SaveUser()
+    {
+        if (selectedUser != null)
+        {
+            var user = await UserManager.FindByIdAsync(selectedUser.Id);
+            if (user != null)
+            {
+                user.Nome = selectedUser.Nome;
+                user.Apelido = selectedUser.Apelido;
+                user.Rua = selectedUser.Rua;
+                await UserManager.UpdateAsync(user);
+
+                usersWithRoles = await GetUsersWithRoles();
+                selectedUser = null;
+                feedbackMessage = "Usuário salvo com sucesso.";
+            }
+        }
+    }
+
+    private void Cancel()
+    {
+        selectedUser = null;
+    }
+
+    private class UserWithRoles
+    {
+        public string Id { get; set; } = string.Empty;
+        public string Nome { get; set; } = string.Empty;
+        public string Apelido { get; set; } = string.Empty;
+        public string Rua { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public List<string> Roles { get; set; } = new();
+        public bool IsLockedOut { get; set; }
+    }
+}

@@ -1,0 +1,87 @@
+﻿@page "/categoria"
+
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.EntityFrameworkCore
+@using Microsoft.AspNetCore.Components.QuickGrid
+@using GestaoLojaV1.Entities
+@using GestaoLojaV1.Data
+@inject IDbContextFactory<ApplicationDbContext> DbFactory
+@implements IAsyncDisposable
+@attribute [Authorize(Roles = "Admin,Gestor")]
+
+<PageTitle>Categorias</PageTitle>
+
+<h1>Listagem de Categorias de Produtos</h1>
+
+<p>
+    <a title="Nova categoria!" href="categoria/create"><img src="/img/novo.png" style="height:50px" /></a>
+</p>
+
+<QuickGrid TItem="Categoria" Items="CategoriasQuery" Class="table">
+    <TemplateColumn Context="categoria">
+        @if (categoria.Imagem is not null)
+        {
+            <img title="Imagem Atual: @categoria.UrlImagem" id="imagePreview" class="img-thumbnail mt-2" src="data:image/*;base64,@(Convert.ToBase64String(categoria.Imagem))" style="width:100px" />
+        }
+        else
+        {
+            <img id="imagePreview" class="img-thumbnail mt-2" src="img/noproductstrans.png" style="width:100px;" />
+        }
+    </TemplateColumn>
+
+    <PropertyColumn Title="Nome" Property="categoria => categoria.Nome" />
+    <PropertyColumn Title="Ordem" Property="categoria => categoria.Ordem" />
+
+    <!-- Nova coluna: Categoria Pai -->
+    <TemplateColumn Title="Categoria Pai" Context="categoria">
+        @if (categoria.CategoriaPai is not null)
+        {
+            @categoria.CategoriaPai.Nome
+        }
+        else
+        {
+            <em>Sem categoria pai</em>
+        }
+    </TemplateColumn>
+
+    <TemplateColumn Context="categoria">
+        <a title="Editar" href="@($"categoria/edit?id={categoria.Id}")"><img title="Editar" src="/img/editicon.png" style="height:30px" /></a> |
+        <a title="Detalhes" href="@($"categoria/details?id={categoria.Id}")"><img title="Detalhes" src="/img/detailsicon.png" style="height:30px" /></a> |
+        <a title="Apagar" href="@($"categoria/delete?id={categoria.Id}")"><img title="Apagar" src="/img/deleteicon.png" style="height:30px" /></a>
+    </TemplateColumn>
+
+    <TemplateColumn Context="categoria">
+        @if (categoria.Subcategorias.Any())
+        {
+            <ul>
+                @foreach (var subcategoria in categoria.Subcategorias)
+                {
+                    <li>@subcategoria.Nome</li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p>Sem subcategorias</p>
+        }
+    </TemplateColumn>
+</QuickGrid>
+
+@code {
+    private ApplicationDbContext context = default!;
+    public IQueryable<Categoria> CategoriasQuery => context.Categorias
+        .Include(c => c.Subcategorias)
+        .Include(c => c.CategoriaPai) 
+    .OrderBy(c => c.Ordem);
+
+    protected override void OnInitialized()
+    {
+        context = DbFactory.CreateDbContext();
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        await context.DisposeAsync();
+    }
+}
+

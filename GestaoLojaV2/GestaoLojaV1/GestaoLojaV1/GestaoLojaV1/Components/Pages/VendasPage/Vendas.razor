@@ -1,0 +1,78 @@
+﻿@page "/account/vendas"
+@using GestaoLojaV1.Entities
+@using Microsoft.AspNetCore.Identity
+@using GestaoLojaV1.Data
+@using Microsoft.EntityFrameworkCore
+@inject UserManager<ApplicationUser> UserManager
+@inject RoleManager<IdentityRole> RoleManager
+@inject ApplicationDbContext DbContext
+@inject IServiceScopeFactory ServiceScopeFactory
+@using Microsoft.AspNetCore.Authorization
+
+@attribute [Authorize(Roles = "Admin,Gestor")]
+<h3>Vendas</h3>
+
+@if (vendas == null)
+{
+    <p><em>Carregando vendas...</em></p>
+}
+else if (!vendas.Any())
+{
+    <p><em>Nenhuma venda encontrada.</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Data</th>
+                <th>Status</th>
+                <th>Total</th>
+                <th>Usuário</th>
+                <th>Produtos</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var venda in vendas)
+            {
+                <tr>
+                    <td>@venda.Id</td>
+                    <td>@venda.Data.ToString("dd/MM/yyyy")</td>
+                    <td>@venda.Status</td>
+                    <td>@venda.Total.ToString("C")</td>
+                    <td>@venda.Usuario?.Email</td>
+                    <td>
+                        <ul>
+                            @foreach (var produtoVenda in venda.ProdutosVenda)
+                            {
+                                <li>
+                                    @produtoVenda.Produto.Nome - Quantidade: @produtoVenda.Quantidade
+                                    - Preço Unitário: @produtoVenda.PrecoUnitario.ToString("C")
+                                </li>
+                            }
+                        </ul>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Venda> vendas;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Criação de um escopo para evitar concorrência no DbContext
+        using var scope = ServiceScopeFactory.CreateScope();
+        var scopedDbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+
+        vendas = await scopedDbContext.Vendas
+            .AsNoTracking() // Melhora o desempenho e evita conflitos de rastreamento
+            .Include(v => v.Usuario) // Inclui informações do usuário
+            .Include(v => v.ProdutosVenda)
+                .ThenInclude(pv => pv.Produto) // Inclui informações dos produtos
+            .ToListAsync();
+    }
+}

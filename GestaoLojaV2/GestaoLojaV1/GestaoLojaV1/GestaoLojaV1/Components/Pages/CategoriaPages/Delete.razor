@@ -1,0 +1,124 @@
+﻿@page "/categoria/delete"
+
+@attribute [Authorize(Roles = "Admin,Gestor")]
+
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.EntityFrameworkCore
+@using GestaoLojaV1.Entities
+@using GestaoLojaV1.Data
+@inject IDbContextFactory<ApplicationDbContext> DbFactory
+@inject NavigationManager NavigationManager
+
+<PageTitle>Apagar</PageTitle>
+
+<h1>Apagar registo</h1>
+
+<h3>Tem a certeza de que quer apagar este registo?</h3>
+<div>
+    <h4>Categoria</h4>
+    <hr />
+    @if (categoria is null)
+    {
+        <p><em>Carregando...</em></p>
+    }
+    else
+    {
+        <dl class="row">
+            <dd>
+                <div>
+                    @if (categoria.Imagem is not null)
+                    {
+                        <img title="@categoria.Nome" id="imagePreview" class="img-thumbnail  mt-2" src="data:image/*;base64,@(Convert.ToBase64String(categoria.Imagem))" style="width:100px">
+                    }
+                    else
+                    {
+                        <img id="imagePreview" class="img-thumbnail mt-2" src="img/noproductstrans.png" style="width:100px;">
+                    }
+                </div>
+            </dd>
+
+            <dt class="col-sm-2">Nome</dt>
+            <dd class="col-sm-10">@categoria.Nome</dd>
+        </dl>
+
+        <dl class="row">
+            <dt class="col-sm-2">Ordem</dt>
+            <dd class="col-sm-10">@categoria.Ordem</dd>
+        </dl>
+
+        @if (hasAssociatedProducts || hasSubcategories)
+        {
+            <p class="text-danger">
+                Esta categoria está associada a produtos ou subcategorias e não pode ser excluída.
+            </p>
+        }
+        else
+        {
+            <EditForm method="post" Model="categoria" OnValidSubmit="DeleteCategoria" FormName="delete" Enhance>
+             <button type="submit" class="btn btn-danger" disabled="@(categoria is null)" onclick="return confirm('Tem a certeza que deseja apagar este registo?')">
+                 <img title="Apagar" src="/img/deleteicon.png" style="height:30px" />
+             </button> |
+             <a href="/categoria" type="button" class="btn btn-outline-secondary">
+                 <img title="Recuar" src="/img/backicon.png" style="height:30px" />
+             </a>
+         </EditForm>
+        }
+    }
+</div>
+
+@code {
+    Categoria? categoria;
+    bool hasAssociatedProducts = false;
+    bool hasSubcategories = false;
+
+    [SupplyParameterFromQuery]
+    public int Id { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        using var context = DbFactory.CreateDbContext();
+        categoria = await context.Categorias.FirstOrDefaultAsync(m => m.Id == Id);
+
+        if (categoria is null)
+        {
+            NavigationManager.NavigateTo("notfound");
+        }
+
+        // Verifica se há produtos associados à categoria
+        hasAssociatedProducts = await context.Produtos.AnyAsync(p => p.CategoriaId == Id);
+
+        // Verifica se há subcategorias associadas à categoria
+        hasSubcategories = await context.Categorias.AnyAsync(c => c.CategoriaPaiId == Id);
+    }
+
+    public async Task DeleteCategoria()
+    {
+        if (hasAssociatedProducts || hasSubcategories)
+        {
+            // Não permite exclusão se houver produtos ou subcategorias associados
+            return;
+        }
+
+        using var context = DbFactory.CreateDbContext();
+        context.Categorias.Remove(categoria!);
+        await context.SaveChangesAsync();
+
+        await deleteImage(categoria.Id, categoria.UrlImagem);
+
+        NavigationManager.NavigateTo("/categoria");
+    }
+
+    public async Task deleteImage(int id, string image)
+    {
+        string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Categorias/" + id + "/" + image);
+
+        try
+        {
+            System.IO.File.Delete(filePath);
+        }
+        catch (Exception ex)
+        {
+            // Log do erro ou tratamento adicional
+        }
+    }
+}
