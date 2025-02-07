@@ -20,6 +20,7 @@ This project was developed to improve **store management**, enabling administrat
 ---
 
 ## 🏗 Technologies Used
+- **Programming Language**: C# 
 - **Backend/API**: ASP.NET Core  
 - **Database**: SQL Server  
 - **Future Frontend**: Blazor (not included in this repository)  
